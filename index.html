@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Navigation</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+</head>
+<body>
+  <!-- Menu Overlay -->
+  <div class="overlay" id="overlay">
+    <!-- Menu Items -->
+    <nav>
+      <ul>
+        <li id="nav-1"><a id="link1" href="#home">Home</a></li>
+        <li id="nav-2"><a id="link2" class="link" href="#about">About</a></li>
+        <li id="nav-3"><a id="link3" class="link" href="#skills">Skills</a></li>
+        <li id="nav-4"><a id="link4" class="link" href="#projects">Projects</a></li>
+        <li id="nav-5"><a id="link5" class="link" href="#contact">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+  <!-- Menu bar -->
+  <div class="menu-bars" id="menu-bars">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <!-- Sections -->
+  <section id="home">
+    <a href="/" >SR DESIGN</a>
+    <div  class="intro-in-lucifor-style">
+      <h1 data-aos="fade-right" class="hello">Hello There</h1>
+      <p data-aos="fade-up" data-aos-delay="700">Welcome to my site</p>
+    </div>
+  </section>
+  <!-- about section-->
+  <section id="about">
+
+    <div class="left-side-about">
+      <div data-aos="zoom-in" data-aos-delay="600" class="vector-img">
+        <img width="100%" src="6963.jpg" alt="">
+      </div>
+      <div data-aos="fade-up" data-aos-delay="700" class="text-down-vector-img">
+        Young and serious about work, always welcome a new challenge!!
+      </div>
+    </div>
+
+    <div data-aos="fade-left"  class="right-side-about">
+      <h1>I'M <br> SANDIP</h1>
+      <p>UX/UI DESIGNER & WEB
+        DEVELOPER</p>
+    </div>
+
+  </section>
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <div data-aos="fade-right" data-aos-delay="500" class="professionals">
+      <h1><span class="one">01</span> PROFESSIONAL</h1>
+      <p>MY KNOWLEDGE LEVEL IN SOFTWARE</p>
+    </div>
+
+    <div class="professional-diagrams">
+      <div class="percentage-bars">
+        <div class="skill-names">
+         
+            <div>HTML&CSS</div>
+            <div>JAVASCRIPT</div>
+            <div>REACT</div>
+            <div>BOOTSTRAP</div>
+            <div>FIGMA</div>
+            <div>PHOTOSHOP</div>
+            <div>ILLUSTRATOR</div>
+          
+        </div>
+        <div class="progress skill-persentage">
+          <div class="parent parent-html"><div id="html-css" class="progress html-css"></div></div>
+          <div class="parent parent-javascript"><div class="progress javascript"></div></div>
+          <div class="parent parent-react"><div class="progress react"></div></div>
+          <div class="parent parent-bootstrap"><div class="progress bootstrap"></div></div>
+          <div class="parent parent-figma"><div class="progress figma"></div></div>
+          <div class="parent parent-photoshop"><div class="progress photoshop"></div></div>
+          <div class="parent parent-illustrator"><div class="progress illustrator"></div></div>
+        </div>
+      </div>
+      <div class="mutitasking-img">
+        <img data-aos="fade-up" src="Multitasking_1.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <section id="projects"><h1>THESE ARE MY RESULTS</h1></section>
+  <section id="contact"><h1>AVAILABLE ANYTIME</h1></section>
+  <!-- Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    offset: 120, // offset (in px) from the original trigger point
+  delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 1500, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false 
+});
+  
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
